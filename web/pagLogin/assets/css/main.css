@@ -1,6 +1,26 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+
+/* new */
+
+.h1Inic{
+		display: inline;
+		color: #FFEB3B;
+
+}
+.h1Inic2{
+		display: inline;
+		
+
+}
+
+
+
+
+
+
+
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
@@ -403,6 +423,7 @@ input, select, textarea {
 			color: inherit;
 			text-decoration: none;
 		}
+
 
 	h1 {
 		font-size: 2.5em;
