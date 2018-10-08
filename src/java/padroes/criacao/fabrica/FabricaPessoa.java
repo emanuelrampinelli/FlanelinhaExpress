@@ -1,8 +1,9 @@
 
-package padroes.criacao;
+package padroes.criacao.fabrica;
 
+import modelo.operadores.Funcionario;
+import modelo.operadores.Motorista;
 import modelo.operadores.Pessoa;
-import modelo.operadores.PessoaFisica;
 import modelo.operadores.PessoaJuridica;
 
 /**
@@ -13,8 +14,12 @@ public class FabricaPessoa {
     public static Pessoa criaPessoa(String pessoa){
         Pessoa pessoaCriada;
         
-        if(pessoa.equalsIgnoreCase("fisica")){
-            pessoaCriada = new PessoaFisica();
+        if(pessoa.equalsIgnoreCase("funcionario")){
+            pessoaCriada = new Funcionario();
+            return pessoaCriada;
+        }
+        else if(pessoa.equalsIgnoreCase("motorista")){
+            pessoaCriada = new Motorista();
             return pessoaCriada;
         }
         else if(pessoa.equalsIgnoreCase("juridica")){
@@ -25,7 +30,7 @@ public class FabricaPessoa {
             return null;
         }
         
-     
+    
         
     }
 }
